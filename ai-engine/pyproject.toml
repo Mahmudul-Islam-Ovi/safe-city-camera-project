@@ -1,0 +1,21 @@
+[project]
+name = "safe-city-ai-engine"
+version = "0.1.0"
+description = "Safe City AI â€” computer vision engine (detection, tracking, behavioral events)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra -q"
+markers = [
+    "slow: tests that load YOLO weights or touch hardware",
+    "webcam: tests that need a physical webcam",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM"]

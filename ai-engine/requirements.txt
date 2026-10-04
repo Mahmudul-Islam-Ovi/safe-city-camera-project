@@ -1,0 +1,17 @@
+# ---- AI Engine runtime dependencies ----
+# PyTorch: on Windows/macOS the default PyPI wheel is CPU-only (fine for dev).
+# For NVIDIA GPU see README "GPU setup" (install torch from the CUDA index first).
+torch>=2.3
+torchvision>=0.18
+ultralytics>=8.3.0,<9.0
+lap>=0.5.12                      # linear assignment used by ByteTrack / BoT-SORT
+opencv-python>=4.9,<5.0
+numpy>=1.26,<3.0
+pydantic>=2.7,<3.0
+pydantic-settings>=2.7,<3.0
+python-dotenv>=1.0
+PyYAML>=6.0
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+redis>=5.0,<6.0
+httpx>=0.27

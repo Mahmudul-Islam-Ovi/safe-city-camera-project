@@ -1,0 +1,13 @@
+# Safe City AI — Behavioral Risk Rules Configuration
+# All values are weights (0-100) added to composite risk evaluation.
+# Explanations are automatically generated for operators.
+
+rules:
+  restricted_zone_entry: 30
+  possible_aggressive_activity: 30
+  possible_abandoned_object: 20
+  loitering: 20
+  running_in_restricted_zone: 20
+  fall_detected: 40
+  high_crowd_density: 15
+  critical_crowd_density: 35
